@@ -8,6 +8,7 @@
     "start": "node index",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "npm build",
     "dev": "nodemon index"
   },
   "keywords": [],
