@@ -1,10 +1,13 @@
 {
+  "homepage": "http://alex-c96.github.io/image-generator",
   "name": "ai-image-gen",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "nodemon index"
   },
   "keywords": [],
@@ -16,6 +19,7 @@
     "openai": "^3.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.20"
   }
 }
